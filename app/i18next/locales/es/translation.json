@@ -4,14 +4,51 @@
 		"about": "Sobre mi",
 		"portfolio": "Portafolio"
 	},
-	"landing": "",
+	"landing":{
+		"welcome": "¡Hola!",
+		"about": "Conoce al ilustrador",
+		"portfolio": "Portafolio"
+	},
 	"about": {
-		"description": "Augusto es un talentoso ilustrador especializado en acrilicos. El usa sus habilidades para crear asombrosas imagenes de fantasia mostrando las mas atractivas escenas.",
+		"description": "Augusto es un talentoso ilustrador especializado en acrílicos. El usa sus habilidades para crear asombrosas imagenes de fantasia mostrando las mas atractivas escenas.",
 		"contactTitles":{
 			"email": "Email",
 			"phone": "Teléfono",
 			"media": "Mis redes sociales"
 		}
 	},
-	"portfolio": ""
+	"portfolio": "",
+	"footer": {
+		"contact": "Contacto: augustotobia@gmail.com"
+	},
+	"entries": {
+		"death": {
+			"title": "Tarot: La Muerte",
+			"description": "Ilustración para mazo de tarot inspirado en folklore marino, acrílico sobre papel"
+		},
+		"fool": {
+			"title": "Tarot: El Loco",
+			"description": "Ilustración para mazo de tarot inspirado en folklore marino, acrílico sobre papel"
+		},
+		"tower": {
+			"title": "Tarot: La Torre",
+			"description": "Ilustración para mazo de tarot inspirado en folklore marino, acrílico sobre papel"
+		},
+		"chase": {
+			"title": "Persecución",
+			"description": "Ilustración de fantasía, acrílico sobre papel."
+		},
+		"invocation": {
+			"title": "La invocación",
+			"description": "Ilustración de fantasía y horror, acrílico sobre papel."
+		},
+		"muted": {
+			"title": "Muted",
+			"description": "Ilustración digital"
+		},
+		"gryph": {
+			"title": "Grifo",
+			"description": "Ilustración digital."
+		}
+	}
 }

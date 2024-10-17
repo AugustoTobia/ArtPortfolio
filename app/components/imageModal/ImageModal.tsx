@@ -1,22 +1,16 @@
+import { useModalContext } from '@/app/(navigation)/ModalContext';
 import Image from 'next/image';
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 
-interface ImageModalProps {
-	isOpen: boolean;
-	source: any;
-	alt: string;
-	onClick: () => void;
-}
-
-const ImageModal: FC<ImageModalProps> = ({ isOpen, source, alt, onClick }) => {
-	const [ratio, setRatio] = useState(1)
+const ImageModal: FC = () => {
+	const {isModalOpen, imageCloseup, closeModal} = useModalContext()
 
 	return (
-		<div className={`${isOpen ? 'flex' : 'hidden'} bg-[#000d] w-full h-full absolute flex-grow cursor-pointer z-[100]`} onClick={onClick}>
+		<div className={`${isModalOpen ? 'flex' : 'hidden'} bg-[#000d] w-full h-full absolute flex-grow cursor-pointer z-[100]`} onClick={closeModal}>
 			<div className='fixed w-full h-full overflow-hidden '>
-				<Image
-					src={source}
-					alt={alt}
+				{imageCloseup && <Image
+					src={imageCloseup.src}
+					alt={imageCloseup.alt}
 					fill
 					placeholder='blur'
 					style={{
@@ -24,12 +18,7 @@ const ImageModal: FC<ImageModalProps> = ({ isOpen, source, alt, onClick }) => {
 						padding: '2vh 2vw'
 					}}
 					priority
-					onLoad={({ target }) => {
-						const { naturalWidth, naturalHeight } = target as HTMLImageElement
-						setRatio(naturalHeight / naturalWidth)
-					}
-				}
-				/>
+				/>}
 			</div>
 		</div>
 	)

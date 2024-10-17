@@ -18,11 +18,12 @@ const SizedImage: FC<ISizedImageProps> = ({ alt, source, onClick }) => {
 				src={source}
 				alt={alt}
 				fill
+				placeholder='blur'
 				style={{
 					objectFit: 'contain',
 				}}
 				priority
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+				sizes="80vw"
 				onLoad={({ target }) => {
 					const { naturalWidth, naturalHeight } = target as HTMLImageElement
 					setRatio(naturalHeight / naturalWidth)

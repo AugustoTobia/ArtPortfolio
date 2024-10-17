@@ -5,8 +5,10 @@ import ProfilePicture from 'public/images/profile-pic.jpg'
 import IgBlack from 'public/svg/InstagramBlack'
 import SocialMediaBar from 'components/SocialMediaBar/SocialMediaBar';
 import ArtStation from 'public/svg/artStation';
+import DeviantArtLogo from 'public/svg/DeviantArtLogo';
 import 'app/i18next/i18n';
-
+import resolveConfig from 'tailwindcss/resolveConfig'
+import config from "tailwind.config";
 import { useTranslation } from 'next-i18next';
 
 const mediaArray = [
@@ -21,19 +23,18 @@ const mediaArray = [
 		svg: ArtStation,
 	},
 	{
-		name: 'aa',
-		link: '',
-		svg: IgBlack,
+		name: 'DeviantArt',
+		link: 'https://www.deviantart.com/tobia-ilustra',
+		svg: DeviantArtLogo,
 	},
-	{
-		name: 'aa',
-		link: '',
-		svg: IgBlack,
-	}
 ]
 
 const TheArtist = () => {
 	const { t } = useTranslation();
+
+	const fullConfig = resolveConfig(config);
+	const colors = fullConfig.theme?.colors as unknown as {[key:string]:string}; //tailwind creates a conflict whith TS when using custon colors programmatically
+
 
 	const contactTitle = 'uppercase font-black text-grey-1 text-center'
 	return (
@@ -79,7 +80,7 @@ const TheArtist = () => {
 					</div>
 					<div>
 						<h2 className={contactTitle}>{t('about.contactTitles.media')}</h2>
-						<SocialMediaBar className='h-10 my-2 mx-auto w-1/2' mediaArray={mediaArray} />
+						<SocialMediaBar className='h-10 my-2 mx-auto w-1/2' fillColor={colors.grey[1]} mediaArray={mediaArray} />
 					</div>
 				</div>
 			</div>

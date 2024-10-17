@@ -1,5 +1,5 @@
 ## To be done:
- - image database
+ - image database => won't do
  - about page
  - tests
  - contact page

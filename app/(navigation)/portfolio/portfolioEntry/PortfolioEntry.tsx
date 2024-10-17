@@ -1,10 +1,14 @@
+'use client'
 import React, { FC } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { IPortfolioEntry } from '@/app/common/types';
+import { useTranslation } from 'next-i18next';
 
 const PortfolioEntry: FC<IPortfolioEntry> = ({ classname, title, description, image, projectId }) => {
+	const { t } = useTranslation();
+	
 	return (
 		<div
 			className={`
@@ -63,11 +67,11 @@ const PortfolioEntry: FC<IPortfolioEntry> = ({ classname, title, description, im
 					'
 				>
 					<div className='absolute w-full h-full bg-black opacity-60 -z-10' />
-					<h1 className='uppercase text-[2rem] text-grey-base font-black'>
-						{title}
+					<h1 className='uppercase text-xl lg:text-[2rem] text-grey-base font-black'>
+						{t(title)}
 					</h1>
-					<p className='uppercase text-grey-base text-center'>
-						{description}
+					<p className='text-grey-base text-center text-sm'>
+						{t(description)}
 					</p>
 				</div>
 
