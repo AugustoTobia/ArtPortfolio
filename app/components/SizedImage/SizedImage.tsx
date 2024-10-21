@@ -1,19 +1,20 @@
 "use client"
-import React, { FC, useState } from 'react'
+import React, { FC, Suspense, useState } from 'react'
 import Image from 'next/image'
-
-interface ISizedImageProps {
-	alt: string;
-	source: any;
-	onClick?: () => void;
-}
+import Loader from 'components/Loader/Loader';
+import { ISizedImageProps } from '@/app/common/types';
 
 const SizedImage: FC<ISizedImageProps> = ({ alt, source, onClick }) => {
-	const [ratio, setRatio] = useState(1)
-	const size = ratio < 1 ? 'w-[80vw] aspect-[4/3]' : ' aspect-[3/5] h-[60vh]'
+	const [ratio, setRatio] = useState<number | null>(null)
+	const [loaded, setLoaded] = useState(false)
+
+	const size = ratio && ratio < 1 ? 'w-[80vw] aspect-[4/3]' : ' aspect-[3/5] h-[60vh]'
+	const showImage = loaded ? 'visible' : 'hidden'
+
+	console.log(loaded);
 
 	return (
-		<div className={`relative ${size} cursor-pointer`} onClick={onClick}>
+		<div className={`relative ${size} cursor-pointer flex items-center`} onClick={onClick}>
 			<Image
 				src={source}
 				alt={alt}
@@ -23,13 +24,16 @@ const SizedImage: FC<ISizedImageProps> = ({ alt, source, onClick }) => {
 					objectFit: 'contain',
 				}}
 				priority
+				className={`${showImage}`}
 				sizes="80vw"
 				onLoad={({ target }) => {
 					const { naturalWidth, naturalHeight } = target as HTMLImageElement
 					setRatio(naturalHeight / naturalWidth)
+					setLoaded(true)
 				}
 				}
 			/>
+			{!loaded && <Loader />}
 		</div>
 	)
 }

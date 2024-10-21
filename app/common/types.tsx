@@ -44,3 +44,9 @@ export interface IModalContextProps {
 	imageCloseup?: { src: StaticImageData, alt: string };
 	isModalOpen: boolean;
 }
+
+export interface ISizedImageProps {
+	alt: string;
+	source: any;
+	onClick?: () => void;
+}
