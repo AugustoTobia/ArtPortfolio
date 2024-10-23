@@ -15,8 +15,8 @@ const TheArtist = () => {
 	const fullConfig = resolveConfig(config);
 	const colors = fullConfig.theme?.colors as unknown as { [key: string]: string }; //tailwind creates a conflict whith TS when using custon colors programmatically
 
-
 	const contactTitle = 'uppercase font-black text-grey-1 text-center'
+
 	return (
 		<div className='flex flex-col-reverse lg:flex-row justify-center items-center lg:items-start '>
 			<h1 className='text-grey-1 text-3xl uppercase font-black order-1 lg:hidden'>
@@ -36,7 +36,7 @@ const TheArtist = () => {
 				<h1 className='text-grey-1 text-3xl uppercase font-black hidden lg:block'>
 					{t('about.contactData.name')}
 				</h1>
-				<div className='overflow-hidden'>
+				<div className='overflow-hidden text-grey-1'>
 					{useMultilineTranslation('about.description')}
 				</div>
 			</div>
@@ -52,8 +52,10 @@ const TheArtist = () => {
 				</div>
 				<div className='w-full flex flex-col mt-2 space-y-2 items-center'>
 					<div className='w-1/2 flex flex-col justify-center items-center'>
-						<h2 className={contactTitle}>{t('about.contactTitles.email')}</h2><p>{t('about.contactData.email')}</p>
-						<h2 className={contactTitle}>{t('about.contactTitles.phone')}</h2><p>{t('about.contactData.phone')}</p>
+						<h2 className={contactTitle}>{t('about.contactTitles.email')}</h2>
+						<p className='text-grey-1'>{t('about.contactData.email')}</p>
+						<h2 className={contactTitle}>{t('about.contactTitles.phone')}</h2>
+						<p className='text-grey-1'>{t('about.contactData.phone')}</p>
 					</div>
 					<div>
 						<h2 className={contactTitle}>{t('about.contactTitles.media')}</h2>

@@ -46,7 +46,7 @@ const Header: FC = () => {
 						<Link
 							href='/'
 						>
-							<AtLogo fillColor={colors.black} />
+							<AtLogo fillColor={colors.grey[1]} />
 						</Link>
 					</div>
 					{linkList.map((link) => {
