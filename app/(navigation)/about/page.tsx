@@ -7,7 +7,7 @@ import 'app/i18next/i18n';
 import resolveConfig from 'tailwindcss/resolveConfig'
 import config from "tailwind.config";
 import { useTranslation } from 'next-i18next';
-import { multilineTranslation } from '@/app/common/utils';
+import { useMultilineTranslation } from '@/app/common/utils';
 
 const TheArtist = () => {
 	const { t } = useTranslation();
@@ -37,7 +37,7 @@ const TheArtist = () => {
 					{t('about.contactData.name')}
 				</h1>
 				<div className='overflow-hidden'>
-					{multilineTranslation('about.description')}
+					{useMultilineTranslation('about.description')}
 				</div>
 			</div>
 			<div className='w-full lg:w-1/4 flex flex-col px-5 items-center justify-center'>

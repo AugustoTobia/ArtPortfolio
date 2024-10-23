@@ -22,7 +22,7 @@ const ArtworkSlider: FC<IArtowrkSlider> = ({ imageArray }) => {
 			})
 		}, 4000)
 
-	}, [currentIndex])
+	}, [currentIndex, imageArray])
 
 	return (
 		<div className="flex w-screen h-screen relative overflow-hidden z-0">

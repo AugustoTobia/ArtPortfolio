@@ -11,7 +11,7 @@ export const fillGrid = () => {
 }
 
 
-export const multilineTranslation = (key: string) => {
+export const useMultilineTranslation = (key: string) => {
 	const { t } = useTranslation();
 	const items = t(key).split('\n')
 
