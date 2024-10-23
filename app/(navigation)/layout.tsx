@@ -16,7 +16,7 @@ const Layout: FC<Readonly<{
 		<div className='bg-grey-base relative flex flex-col justify-between h-full w-full min-h-screen'>
 			<ModalProvider >
 				<Header />
-				<main className='p-[2%] bg-grey-base mt-[5%]'>
+				<main className=' bg-grey-base mt-[50px]'>
 					{children}
 				</main>
 				<Footer />

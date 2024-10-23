@@ -1,20 +1,25 @@
 {
-	"header":{
+	"header": {
 		"home": "Inicio",
 		"about": "Sobre mi",
 		"portfolio": "Portafolio"
 	},
-	"landing":{
+	"landing": {
 		"welcome": "¡Hola!",
 		"about": "Conoce al ilustrador",
 		"portfolio": "Portafolio"
 	},
 	"about": {
-		"description": "Augusto es un talentoso ilustrador especializado en acrílicos. El usa sus habilidades para crear asombrosas imagenes de fantasia mostrando las mas atractivas escenas.",
-		"contactTitles":{
+		"description": "Augusto nació en Italia un 3 de enero de 1996. Su familia pronto se trasladó a Argentina donde él vive hasta el día de hoy. Su interés por el dibujo y la pintura se mostraron desde una temprana edad. Siempre estudiando a sus influencias e intentando desarrollar sus habilidades.\n De joven descubrió Magic The Gathering, y junto al juego, sus impresionantes ilustraciones. Desde ese momento supo que quería dedicarse a esto.\n Ya adulto, estudió diseño gráfico donde aprendió aún más de composición, color y comunicación.\n  Hoy en día, Augusto se dedica principalmente al desarrollo de ilustraciones de fantasía, utilizando el acrílico como su principal herramienta, mostrando un estilo marcado y una habilidad siempre creciente. ",
+		"contactTitles": {
 			"email": "Email",
 			"phone": "Teléfono",
 			"media": "Mis redes sociales"
+		},
+		"contactData": {
+			"name": "Augusto Tobia",
+			"email": "augustotobia@gmail.com",
+			"phone": "+54 9 341 743 4926"
 		}
 	},
 	"portfolio": "",

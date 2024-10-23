@@ -34,8 +34,8 @@ export type ISocialMediaItem = {
 
 export interface ISocialMediaBarProps {
 	mediaArray: ISocialMediaItem[];
-	className: string;
-	fillColor: string;
+	className?: string;
+	fillColor?: string;
 }
 
 export interface IModalContextProps {
@@ -49,4 +49,12 @@ export interface ISizedImageProps {
 	alt: string;
 	source: any;
 	onClick?: () => void;
+}
+
+export interface SliderImage {
+	src: StaticImageData;
+	alt: string;
+}
+export interface IArtowrkSlider { 
+	imageArray: SliderImage[]
 }

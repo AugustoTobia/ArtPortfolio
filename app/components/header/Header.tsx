@@ -39,7 +39,7 @@ const Header: FC = () => {
 	const colors = fullConfig.theme?.colors as unknown as { [key: string]: string }; //tailwind creates a conflict whith TS when using custon colors programmatically
 
 	return (
-		<div className='fixed w-full bg-grey-base z-[30]'>
+		<div className='fixed w-full bg-grey-base z-[30] h-[50px]'>
 			<div className='flex'>
 				<div className='flex items-center justify-center space-x-4 mx-auto'>
 					<div className='h-full w-10 ml-[2%] p-1'>
