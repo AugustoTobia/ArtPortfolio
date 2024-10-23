@@ -54,8 +54,6 @@ const TheArtist = () => {
 					<div className='w-1/2 flex flex-col justify-center items-center'>
 						<h2 className={contactTitle}>{t('about.contactTitles.email')}</h2>
 						<p className='text-grey-1'>{t('about.contactData.email')}</p>
-						<h2 className={contactTitle}>{t('about.contactTitles.phone')}</h2>
-						<p className='text-grey-1'>{t('about.contactData.phone')}</p>
 					</div>
 					<div>
 						<h2 className={contactTitle}>{t('about.contactTitles.media')}</h2>

@@ -10,16 +10,14 @@
 		"portfolio": "Portfolio"
 	},
 	"about": {
-		"description": "Augusto was born in Italy on January 3, 1996. His family soon moved to Argentina, where he still lives today. His interest in drawing and painting emerged at an early age, always studying his influences and trying to develop his skills. \n As a young man, he discovered Magic: The Gathering, along with its stunning illustrations. From that moment, he knew he wanted to pursue this path.\n As an adult, he studied graphic design, where he learned even more about composition, color, and communication.\n Today, Augusto primarily focuses on developing fantasy illustrations, using acrylics as his main medium, showcasing a distinct style and continually growing skill.",
+		"description": "Augusto was born in Italy on a snowy day in 1996. His family soon moved to Argentina, where he still lives today. His interest in drawing and painting emerged at an early age, always studying his influences and trying to develop his skills. \n As a young man, he discovered Magic: The Gathering, along with its stunning illustrations. From that moment, he knew he wanted to pursue this path.\n As an adult, he studied graphic design, where he learned even more about composition, color, and communication.\n Today, Augusto primarily focuses on developing fantasy illustrations, using acrylics as his main medium, showcasing a distinct style and continually growing skill.",
 		"contactTitles": {
 			"email": "Email",
-			"phone": "Phone",
 			"media": "My Social Media"
 		},
 		"contactData": {
 			"name": "Augusto Tobia",
-			"email": "augustotobia@gmail.com",
-			"phone": "+54 9 341 743 4926"
+			"email": "augustotobia@gmail.com"
 		}
 	},
 	"portfolio": "",
