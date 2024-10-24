@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React from 'react'
-import ProfilePicture from 'public/images/profile-pic.jpg'
+import ProfilePicture from 'public/images/profile-pic.webp'
 import SocialMediaBar, { defaultMediaArray } from 'components/SocialMediaBar/SocialMediaBar';
 import 'app/i18next/i18n';
 import resolveConfig from 'tailwindcss/resolveConfig'
