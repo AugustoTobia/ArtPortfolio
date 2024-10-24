@@ -5,8 +5,6 @@ import { useTranslation } from 'next-i18next';
 
 import { IArtowrkSlider } from "@/app/common/types";
 
-
-
 const ArtworkSlider: FC<IArtowrkSlider> = ({ imageArray }) => {
 	const [currentIndex, setIndex] = useState<number>(0)
 	const { t } = useTranslation();

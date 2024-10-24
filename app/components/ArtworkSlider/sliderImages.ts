@@ -5,6 +5,8 @@ import persecucion from 'public/images/persecucion.webp'
 import laInvocacion from 'public/images/la-invocacion.webp'
 import grifo from 'public/images/grifo.webp'
 import mute from 'public/images/mute.webp'
+import empress from 'public/images/la-emperatriz.webp'
+import koi from 'public/images/koi-fish.webp'
 import { SliderImage } from "@/app/common/types";
 
 export const imageArray: SliderImage[] = [
@@ -15,20 +17,33 @@ export const imageArray: SliderImage[] = [
 	{
 		src: laTorre,
 		alt: 'entries.chase.title',
-	}, {
+	},
+	{
 		src: elLoco,
 		alt: 'entries.invocation.title',
-	}, {
+	},
+	{
 		src: persecucion,
 		alt: 'entries.fool.title',
-	}, {
+	},
+	{
 		src: laInvocacion,
 		alt: 'entries.tower.title',
-	}, {
+	},
+	{
 		src: grifo,
 		alt: 'entries.gryph.title',
-	}, {
+	},
+	{
 		src: mute,
 		alt: 'entries.muted.title',
+	},
+	{
+		src: koi,
+		alt: 'entries.koi.title',
+	},
+	{
+		src: empress,
+		alt: 'entries.empress.title',
 	},
 ]

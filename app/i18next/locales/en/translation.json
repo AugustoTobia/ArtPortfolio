@@ -27,15 +27,15 @@
 	"entries": {
 		"death": {
 			"title": "Tarot: Death",
-			"description": "Illustration made for a tarot deck inspired by marine folklore. Acrylic over paper."
+			"description": "part of Tarot deck project inspired by marine folklore. Acrylic over paper."
 		},
 		"fool": {
 			"title": "Tarot: The Fool",
-			"description": "Illustration made for a tarot deck inspired by marine folklore. Acrylic over paper."
+			"description": "part of Tarot deck project inspired by marine folklore. Acrylic over paper."
 		},
 		"tower": {
 			"title": "Tarot: The Tower",
-			"description": "Illustration made for a tarot deck inspired by marine folklore. Acrylic over paper."
+			"description": "part of Tarot deck project inspired by marine folklore. Acrylic over paper."
 		},
 		"chase": {
 			"title": "The Chase",
@@ -52,6 +52,14 @@
 		"gryph": {
 			"title": "Gryph",
 			"description": "Made with digital media."
+		},
+		"koi": {
+			"title": "Koi",
+			"description": "Commission, acrilyc over paper."
+		},
+		"empress": {
+			"title": "The Empress",
+			"description": "part of Tarot deck project inspired by marine folklore. Acrylic over paper."
 		}
 	}
 }
