@@ -70,7 +70,7 @@ const PortfolioEntry: FC<IPortfolioEntry> = ({ classname, title, description, im
 					<h1 className='uppercase text-xl lg:text-[2rem] text-grey-base font-black'>
 						{t(title)}
 					</h1>
-					<p className='text-grey-base text-center text-sm'>
+					<p className='text-grey-base text-center text-sm px-4'>
 						{t(description)}
 					</p>
 				</div>

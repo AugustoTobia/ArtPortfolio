@@ -6,21 +6,25 @@ import laInvocacion from 'public/images/la-invocacion.webp'
 import grifo from 'public/images/grifo.webp'
 import mute from 'public/images/mute.webp'
 import empress from 'public/images/la-emperatriz.webp'
-import koi from 'public/images/koi-fish.webp'
+import koi from 'public/images/koi-preview.webp'
 import { SliderImage } from "@/app/common/types";
 
 export const imageArray: SliderImage[] = [
 	{
-		src: laMuerte,
-		alt: 'entries.death.title',
+		src: koi,
+		alt: 'entries.koi.title',
+	},
+	{
+		src: elLoco,
+		alt: 'entries.invocation.title',
 	},
 	{
 		src: laTorre,
 		alt: 'entries.chase.title',
 	},
 	{
-		src: elLoco,
-		alt: 'entries.invocation.title',
+		src: laMuerte,
+		alt: 'entries.death.title',
 	},
 	{
 		src: persecucion,
@@ -37,10 +41,6 @@ export const imageArray: SliderImage[] = [
 	{
 		src: mute,
 		alt: 'entries.muted.title',
-	},
-	{
-		src: koi,
-		alt: 'entries.koi.title',
 	},
 	{
 		src: empress,
